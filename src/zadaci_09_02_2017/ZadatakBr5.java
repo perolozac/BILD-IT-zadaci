@@ -1,5 +1,6 @@
 package zadaci_09_02_2017;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ZadatakBr5 {
@@ -13,6 +14,7 @@ public class ZadatakBr5 {
 		System.out
 				.println("Unesite broj, koliko puta zelite da porogram simulira bacanje novèiæa");
 		// omogucujemo korisniku da unese iz konzole broj bacanja
+		try{
 		int brojBacanja = unos.nextInt();
 		
 		//validacija, da petlja vrti dok unos ne bude validan
@@ -23,6 +25,10 @@ public class ZadatakBr5 {
 		}
 		// pozivamo metodu i prsledjujemo joj korisnikov unos(argumenat)
 		glavaPismo(brojBacanja);
+		}catch(InputMismatchException e){
+			System.out.println("Greska pri unosu, pokusajte ponovo");
+			ZadatakBr5.main(args);
+		}
 	}
 
 	// metoda za ispis i racunanje, koja prima jedan parametar

@@ -4,7 +4,7 @@ public class ZadatakBr1 {
 
 	// 1. Napisati program koji ispisuje sve prestupne godine, 10 po liniji, od
 	// godine 101 do 2100, odvojene jednim spaceom. Takoðer ispisati i ukupan
-	// broj prijestupnih godina u ovom vremenskom periodu.
+	// broj prijstupnih godina u ovom vremenskom periodu.
 
 	public static void main(String[] args) {
 		int brojac = 0; //deklarisali brojac i dali mu vrednost 0

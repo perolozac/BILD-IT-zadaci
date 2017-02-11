@@ -1,5 +1,6 @@
 package zadaci_09_02_2017;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ZadatakBr4 {
@@ -12,7 +13,7 @@ public class ZadatakBr4 {
 	public static void main(String[] args) {
 		System.out.println("Unesite broj, da ispisemo matricu te velicine: ");
 		Scanner unos = new Scanner(System.in);
-		
+		try{
 		//korisnik iz konzole unosi kolika matrica treba da bude
 		int brojRedova_Kolona = unos.nextInt();
 		
@@ -24,6 +25,10 @@ public class ZadatakBr4 {
 		
 		//metodi prosledjujemo argumenat
 		printMatrix(brojRedova_Kolona);
+	}catch(InputMismatchException e){
+		System.out.println("Greska pri unosu, pokusajte ponovo");
+		ZadatakBr4.main(args);
+	}
 	}
 	
     //metoda za ispisivanje matrice

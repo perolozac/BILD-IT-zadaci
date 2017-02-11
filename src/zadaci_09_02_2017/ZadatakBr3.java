@@ -54,9 +54,10 @@ public class ZadatakBr3 {
 			System.out.println("Ukupan broj karaktera u tekstu: "
 					+ brojacKaraktera);
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
+			System.out.println("pokrenite ponovo program, niste unjeli validne podatke!");
 		}
 	}
 

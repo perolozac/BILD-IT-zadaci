@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ProsledjivanjeArgumentaZadatkubr3 {
 
 	public static void main(String[] args) throws IOException {
-// Pravimo bjekat tipa Scanner, kako bih omogucili korisniku da iz konzole unese ime fajla
+// Pravimo bjekat tipa Scaner, kako bih omogucili korisniku da iz konzole unese ime fajla
 		Scanner unos = new Scanner(System.in);
 		
 		System.out.print("Unesite ime fajla, u kojem zelite da prebrojimo redove,\nrjeci i karaktere koji se u njemu nalaze: "); // ako unesete "test.txt", mozete
