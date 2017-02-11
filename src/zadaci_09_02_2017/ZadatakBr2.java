@@ -12,6 +12,13 @@ public class ZadatakBr2 {
 		Scanner unos = new Scanner(System.in);
 		System.out.println("Unesite broj pitanja:");
 		int brojPitanja = unos.nextInt();
+		 
+		//validacija, da petlja vrti dok unos ne bude validan
+		while(brojPitanja<=0){
+			System.out.println("Broja pitanaj mora biti veci od nula, unesite ponovo  broja pitanja: ");
+			brojPitanja = unos.nextInt();
+		}
+
 		miniKviz(brojPitanja); // pozivamo metodu i prosledjujemo joj argument(broj pitanj)
 		unos.close();
 	}

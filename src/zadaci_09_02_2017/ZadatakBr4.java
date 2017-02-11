@@ -12,13 +12,23 @@ public class ZadatakBr4 {
 	public static void main(String[] args) {
 		System.out.println("Unesite broj, da ispisemo matricu te velicine: ");
 		Scanner unos = new Scanner(System.in);
+		
 		//korisnik iz konzole unosi kolika matrica treba da bude
 		int brojRedova_Kolona = unos.nextInt();
+		
+		//validacija, da petlja vrti dok unos ne bude validan
+		while(brojRedova_Kolona<=0){
+			System.out.println("Broja broj redova i kolona mora biti veci od nule, unesite ponovo  broja redova i kolona: ");
+			brojRedova_Kolona = unos.nextInt();
+		}
+		
 		//metodi prosledjujemo argumenat
 		printMatrix(brojRedova_Kolona);
 	}
+	
     //metoda za ispisivanje matrice
 	public static void printMatrix(int n) {
+		
 		//double array koji ce sadrzavati n redova i kolona(tj isti broj)
 		int doubleArray[][] = new int[n][n];
 
@@ -29,11 +39,12 @@ public class ZadatakBr4 {
 
 				//pri svakom prolasku kroz petlju biramo novi nasumicni broj
 				int nasumicanBr = (int) (Math.round(Math.random()));
+				
 				//ispis nasumicnog broja
 				System.out.print(((doubleArray[i][j] = nasumicanBr) + " "));
 
 			}
-			System.out.println();
+			System.out.println();// prelaz u novi red
 		}
 	}
 }
