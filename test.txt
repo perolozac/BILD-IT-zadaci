@@ -1,3 +1,0 @@
-Napisite program koji ce brojati broj karaktera
-rijeci i linija
-teksta u nekom fileu.
